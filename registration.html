@@ -721,73 +721,213 @@ footer a:hover{
    MOBILE
 ===================================================== */
 
-@media(max-width:900px){
+       @media (max-width: 900px) {
+
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
 
     .nav-links{
+
         display:none;
+
+        position:absolute;
+
+        top:80px;
+
+        right:5%;
+
+        background:#071522;
+     align-items:stretch;
+
+        width:230px;
+
+        padding:25px;
+
+        flex-direction:column;
+
+        gap:18px;
+
+        border-radius:8px;
+
     }
 
-    .registration-grid{
-        grid-template-columns:1fr;
+
+    .nav-links.active{
+
+        display:flex;
+
     }
 
-    .sidebar{
-        position:static;
-    }
+.nav-dropdown{
+    width:100%;
+}
 
-    .steps{
-        grid-template-columns:1fr;
-    }
 
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
+.nav-dropdown > a{
+
+    width:100%;
+
+    text-align:left;
 
 }
 
-@media(max-width:600px){
 
-    .navbar{
-        padding:15px 5%;
-    }
+.dropdown-menu{
 
-    .brand img{
-        width:45px;
-        height:45px;
-    }
+    position:static;
 
-    .brand-text{
-        font-size:10px;
-    }
+    transform:none;
 
-    .page-hero{
-        min-height:430px;
-    }
+    width:100%;
 
-    .page-hero h1{
-        font-size:40px;
-    }
+    margin-top:8px;
 
-    .intro{
-        padding:65px 0 40px;
-    }
+    background:#071522;
 
-    .intro h2{
-        font-size:34px;
-    }
+    box-shadow:none;
 
-    .fee-table{
-        font-size:11px;
-    }
-
-    .fee-table th,
-    .fee-table td{
-        padding:12px 9px;
-    }
+    display:none;
 
 }
 
-</style>
+
+.nav-dropdown.mobile-open .dropdown-menu{
+
+    display:block;
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+.dropdown-menu a{
+
+    color:rgba(255,255,255,.78)!important;
+
+}
+
+
+.nav-dropdown.mobile-open .dropdown-arrow{
+
+    transform:rotate(180deg);
+
+}
+    .about-grid {
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+    }
+
+
+    .purpose-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+    }
+
+
+    .footer-brand {
+
+        align-items:center;
+
+    }
+
+
+
+.footer-brand{
+
+    align-items:center;
+
+}
+
+}
+
+
+
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .purpose-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                padding: 15px 5%;
+            }
+
+            .brand img {
+                width: 45px;
+                height: 45px;
+            }
+            .eyebrow{
+
+    font-size:15px;
+
+}
+
+.eyebrow span{
+
+    font-size:11px;
+
+}
+
+            .brand-text {
+                font-size: 10px;
+            }
+
+            .page-hero {
+                min-height: 420px;
+            }
+
+            .page-hero h1 {
+                font-size: 40px;
+            }
+
+            .page-hero p {
+                font-size: 14px;
+            }
+
+            .about-section {
+                padding: 65px 0;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -795,14 +935,15 @@ footer a:hover{
 <body>
 
 
-<!-- =====================================================
+<!-- =========================================================
      NAVIGATION
-===================================================== -->
+========================================================= -->
 
 <header class="navbar">
 
     <a href="index.html" class="brand">
 
+        <!-- COLLEGE LOGO -->
         <img
             src="college-logo.png"
             alt="H.R.H. The P.O.W.I.E.T. Logo"
@@ -818,42 +959,80 @@ footer a:hover{
     </a>
 
 
-    <nav class="nav-links">
+    <button class="menu-toggle" id="menu-toggle">
+    ☰
+</button>
 
-        <a href="index.html">
-            Home
+
+<nav class="nav-links">
+
+    <a href="index.html">
+        Home
+    </a>
+
+
+
+
+    <!-- INFORMATION DROPDOWN -->
+
+    <div class="nav-dropdown">
+
+        <a href="#">
+            Information
+            <span class="dropdown-arrow">▼</span>
         </a>
 
-        <a href="about.html">
-            About
-        </a>
 
-        <a href="themes.html">
-            Themes
-        </a>
+        <div class="dropdown-menu">
 
-        <a href="committee.html">
-            Committee
-        </a>
+            <a href="about.html">
+                About Us
+            </a>
 
-        <a href="important-dates.html">
-            Dates
-        </a>
+            <a href="important-dates.html">
+                Important Dates
+            </a>
 
-        <a href="call-for-papers.html">
-            Papers
-        </a>
+            <a href="programme.html">
+                Programme
+            </a>
 
-        <a
-            href="registration.html"
-            class="active nav-register"
-        >
-            Registration
-        </a>
+        </div>
 
-    </nav>
+    </div>
+   <a href="themes.html">
+        Themes
+    </a>
+
+    <a href="committee.html">
+        Committee
+    </a>
+
+
+    <a href="keynote.html">
+        Keynote
+    </a>
+
+
+    <a href="contact.html">
+        Contact
+    </a>
+
+
+    <a href="call-for-papers.html">
+        Papers
+    </a>
+
+
+    <a href="registration.html" class="nav-register">
+        Registration
+    </a>
+
+
+</nav>
 
 </header>
+
 
 
 
@@ -867,9 +1046,10 @@ footer a:hover{
 
         <div class="hero-content">
 
-            <div class="eyebrow">
-                CIDSESRF-2027 · 1927–2027
-            </div>
+             <div class="eyebrow">
+    CIDSESRF-2027<br>
+    <span>A Centenary Conference · 1927–2027</span>
+</div>
 
             <h1>
                 Registration

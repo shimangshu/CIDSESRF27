@@ -667,70 +667,213 @@ footer a:hover{
    MOBILE
 ===================================================== */
 
-@media(max-width:900px){
+  @media (max-width: 900px) {
+
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
 
     .nav-links{
+
         display:none;
-    }
 
-    .contact-grid,
-    .address-grid{
-        grid-template-columns:1fr;
-    }
+        position:absolute;
 
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
+        top:80px;
 
-}
+        right:5%;
 
-@media(max-width:600px){
+        background:#071522;
+     align-items:stretch;
 
-    .navbar{
-        padding:15px 5%;
-    }
+        width:230px;
 
-    .brand img{
-        width:45px;
-        height:45px;
-    }
-
-    .brand-text{
-        font-size:10px;
-    }
-
-    .page-hero{
-        min-height:430px;
-    }
-
-    .page-hero h1{
-        font-size:40px;
-    }
-
-    .intro{
-        padding:65px 0 40px;
-    }
-
-    .intro h2{
-        font-size:34px;
-    }
-
-    .contact-card{
         padding:25px;
+
+        flex-direction:column;
+
+        gap:18px;
+
+        border-radius:8px;
+
     }
 
-    .address-section,
-    .map-section{
-        padding:60px 0;
+
+    .nav-links.active{
+
+        display:flex;
+
     }
 
-    .map-frame{
-        height:300px;
-    }
+.nav-dropdown{
+    width:100%;
+}
+
+
+.nav-dropdown > a{
+
+    width:100%;
+
+    text-align:left;
 
 }
 
-</style>
+
+.dropdown-menu{
+
+    position:static;
+
+    transform:none;
+
+    width:100%;
+
+    margin-top:8px;
+
+    background:#071522;
+
+    box-shadow:none;
+
+    display:none;
+
+}
+
+
+.nav-dropdown.mobile-open .dropdown-menu{
+
+    display:block;
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+.dropdown-menu a{
+
+    color:rgba(255,255,255,.78)!important;
+
+}
+
+
+.nav-dropdown.mobile-open .dropdown-arrow{
+
+    transform:rotate(180deg);
+
+}
+    .about-grid {
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+    }
+
+
+    .purpose-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .footer-grid {
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+    }
+
+
+    .footer-brand {
+
+        align-items:center;
+
+    }
+
+
+
+.footer-brand{
+
+    align-items:center;
+
+}
+
+}
+
+
+
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 45px;
+            }
+
+            .purpose-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                padding: 15px 5%;
+            }
+
+            .brand img {
+                width: 45px;
+                height: 45px;
+            }
+            .eyebrow{
+
+    font-size:15px;
+
+}
+
+.eyebrow span{
+
+    font-size:11px;
+
+}
+
+            .brand-text {
+                font-size: 10px;
+            }
+
+            .page-hero {
+                min-height: 420px;
+            }
+
+            .page-hero h1 {
+                font-size: 40px;
+            }
+
+            .page-hero p {
+                font-size: 14px;
+            }
+
+            .about-section {
+                padding: 65px 0;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -738,14 +881,15 @@ footer a:hover{
 <body>
 
 
-<!-- =====================================================
+<!-- =========================================================
      NAVIGATION
-===================================================== -->
+========================================================= -->
 
 <header class="navbar">
 
     <a href="index.html" class="brand">
 
+        <!-- COLLEGE LOGO -->
         <img
             src="college-logo.png"
             alt="H.R.H. The P.O.W.I.E.T. Logo"
@@ -761,58 +905,80 @@ footer a:hover{
     </a>
 
 
-    <nav class="nav-links">
+    <button class="menu-toggle" id="menu-toggle">
+    ☰
+</button>
 
-        <a href="index.html">
-            Home
+
+<nav class="nav-links">
+
+    <a href="index.html">
+        Home
+    </a>
+
+
+
+
+    <!-- INFORMATION DROPDOWN -->
+
+    <div class="nav-dropdown">
+
+        <a href="#">
+            Information
+            <span class="dropdown-arrow">▼</span>
         </a>
 
-        <a href="about.html">
-            About
-        </a>
 
-        <a href="themes.html">
-            Themes
-        </a>
+        <div class="dropdown-menu">
 
-        <a href="committee.html">
-            Committee
-        </a>
+            <a href="about.html">
+                About Us
+            </a>
 
-        <a href="important-dates.html">
-            Dates
-        </a>
+            <a href="important-dates.html">
+                Important Dates
+            </a>
 
-        <a href="call-for-papers.html">
-            Papers
-        </a>
+            <a href="programme.html">
+                Programme
+            </a>
 
-        <a href="keynote.html">
-            Keynote
-        </a>
+        </div>
 
-        <a href="programme.html">
-            Programme
-        </a>
+    </div>
+   <a href="themes.html">
+        Themes
+    </a>
 
-        <a href="downloads.html">
-            Downloads
-        </a>
+    <a href="committee.html">
+        Committee
+    </a>
 
-        <a
-            href="registration.html"
-            class="nav-register"
-        >
-            Registration
-        </a>
 
-        <a href="contact.html" class="active">
-            Contact
-        </a>
+    <a href="keynote.html">
+        Keynote
+    </a>
 
-    </nav>
+
+    <a href="contact.html">
+        Contact
+    </a>
+
+
+    <a href="call-for-papers.html">
+        Papers
+    </a>
+
+
+    <a href="registration.html" class="nav-register">
+        Registration
+    </a>
+
+
+</nav>
 
 </header>
+
 
 
 
@@ -827,8 +993,9 @@ footer a:hover{
         <div class="hero-content">
 
             <div class="eyebrow">
-                CIDSESRF-2027 · 1927–2027
-            </div>
+    CIDSESRF-2027<br>
+    <span>A Centenary Conference · 1927–2027</span>
+</div>
 
             <h1>
                 Contact Us
@@ -894,39 +1061,7 @@ footer a:hover{
 
             <!-- CONFERENCE CONTACT -->
 
-            <div class="contact-card">
-
-                <div class="card-label">
-                    Conference
-                </div>
-
-                <h3>
-                    Conference Secretariat
-                </h3>
-
-                <p>
-                    <strong>
-                        CIDSESRF-2027
-                    </strong>
-                </p>
-
-                <p>
-
-                    National Conference on Convergence,
-                    Innovation and Development of Science,
-                    Engineering and Society for a Resilient Future.
-
-                </p>
-
-                <p>
-
-                    H.R.H. The Prince of Wales Institute
-                    of Engineering &amp; Technology,
-                    Jorhat, Assam.
-
-                </p>
-
-            </div>
+           
 
 
 
@@ -1257,8 +1392,11 @@ footer a:hover{
 
     <div class="container">
 
+
         <div class="footer-grid">
 
+
+            <!-- INSTITUTION -->
 
             <div>
 
@@ -1284,28 +1422,56 @@ footer a:hover{
                 </div>
 
 
-                <p style="margin-top:20px;max-width:470px;">
+                <p style="margin-top:20px; max-width:470px;">
 
-                    National Conference on Convergence,
-                    Innovation and Development of Science,
-                    Engineering and Society for a Resilient Future.
-
+                    A premier technical institution in Assam, celebrating a century of technical education, innovation and service.
                 </p>
 
 
-                <p style="margin-top:10px;">
-
-                    Celebrating 100 years of technical education
-                    and service —
-                    <strong style="color:var(--gold)">
-                        1927–2027
-                    </strong>.
-
-                </p>
+              
 
             </div>
 
 
+
+            <!-- COLLEGE -->
+
+            <div>
+
+                <h3>
+                    Institution
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a
+                           href="https://powietjrt.in/"
+                target="_blank"
+            >
+                College Website →
+            </a>
+        </li>
+
+        <li>
+            H.R.H. The P.O.W.I.E.T.
+        </li>
+
+        <li>
+            Gar Ali, Jorhat
+        </li>
+
+        <li>
+            Assam – 785001
+        </li>
+
+    </ul>
+
+</div>
+
+
+
+            <!-- CONFERENCE -->
 
             <div>
 
@@ -1322,58 +1488,8 @@ footer a:hover{
                     </li>
 
                     <li>
-                        <a href="themes.html">
-                            Themes
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="committee.html">
-                            Committee
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="important-dates.html">
-                            Important Dates
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="programme.html">
-                            Programme
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-
-            <div>
-
-                <h3>
-                    Participate
-                </h3>
-
-                <ul>
-
-                    <li>
-                        <a href="call-for-papers.html">
-                            Call for Papers
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="keynote.html">
-                            Keynote Speaker
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="registration.html">
-                            Registration
+                        <a href="contact.html">
+                            Contact
                         </a>
                     </li>
 
@@ -1384,8 +1500,8 @@ footer a:hover{
                     </li>
 
                     <li>
-                        <a href="contact.html">
-                            Contact
+                        <a href="registration.html">
+                            Registration
                         </a>
                     </li>
 
@@ -1397,6 +1513,7 @@ footer a:hover{
         </div>
 
 
+
         <div class="copyright">
 
             © 2027 H.R.H. The P.O.W.I.E.T., Jorhat, Assam
@@ -1405,9 +1522,50 @@ footer a:hover{
 
         </div>
 
+
     </div>
 
 </footer>
+    <script>
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+const navDropdown = document.querySelector(".nav-dropdown");
+const infoLink = navDropdown.querySelector(":scope > a");
+
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+});
+
+
+infoLink.addEventListener("click", (event)=>{
+
+    if(window.innerWidth <= 900){
+
+        event.preventDefault();
+
+        navDropdown.classList.toggle("mobile-open");
+
+    }
+
+});
+
+
+window.addEventListener("resize",()=>{
+
+    if(window.innerWidth > 900){
+
+        navDropdown.classList.remove("mobile-open");
+
+    }
+
+});
+</script>
+
 
 
 </body>

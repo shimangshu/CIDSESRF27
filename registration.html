@@ -1338,8 +1338,11 @@ footer a:hover{
 
     <div class="container">
 
+
         <div class="footer-grid">
 
+
+            <!-- INSTITUTION -->
 
             <div>
 
@@ -1365,28 +1368,56 @@ footer a:hover{
                 </div>
 
 
-                <p style="margin-top:20px;max-width:470px;">
+                <p style="margin-top:20px; max-width:470px;">
 
-                    National Conference on Convergence,
-                    Innovation and Development of Science,
-                    Engineering and Society for a Resilient Future.
-
+                    A premier technical institution in Assam, celebrating a century of technical education, innovation and service.
                 </p>
 
 
-                <p style="margin-top:10px;">
-
-                    Celebrating 100 years of technical education
-                    and service —
-                    <strong style="color:var(--gold)">
-                        1927–2027
-                    </strong>.
-
-                </p>
+              
 
             </div>
 
 
+
+            <!-- COLLEGE -->
+
+            <div>
+
+                <h3>
+                    Institution
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a
+                           href="https://powietjrt.in/"
+                target="_blank"
+            >
+                College Website →
+            </a>
+        </li>
+
+        <li>
+            H.R.H. The P.O.W.I.E.T.
+        </li>
+
+        <li>
+            Gar Ali, Jorhat
+        </li>
+
+        <li>
+            Assam – 785001
+        </li>
+
+    </ul>
+
+</div>
+
+
+
+            <!-- CONFERENCE -->
 
             <div>
 
@@ -1403,40 +1434,14 @@ footer a:hover{
                     </li>
 
                     <li>
-                        <a href="themes.html">
-                            Themes
+                        <a href="contact.html">
+                            Contact
                         </a>
                     </li>
 
                     <li>
-                        <a href="committee.html">
-                            Committee
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="important-dates.html">
-                            Important Dates
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-
-            <div>
-
-                <h3>
-                    Participate
-                </h3>
-
-                <ul>
-
-                    <li>
-                        <a href="call-for-papers.html">
-                            Call for Papers
+                        <a href="downloads.html">
+                            Downloads
                         </a>
                     </li>
 
@@ -1446,18 +1451,13 @@ footer a:hover{
                         </a>
                     </li>
 
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-
                 </ul>
 
             </div>
 
 
         </div>
+
 
 
         <div class="copyright">
@@ -1468,9 +1468,49 @@ footer a:hover{
 
         </div>
 
+
     </div>
 
 </footer>
+    <script>
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+const navDropdown = document.querySelector(".nav-dropdown");
+const infoLink = navDropdown.querySelector(":scope > a");
+
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+});
+
+
+infoLink.addEventListener("click", (event)=>{
+
+    if(window.innerWidth <= 900){
+
+        event.preventDefault();
+
+        navDropdown.classList.toggle("mobile-open");
+
+    }
+
+});
+
+
+window.addEventListener("resize",()=>{
+
+    if(window.innerWidth > 900){
+
+        navDropdown.classList.remove("mobile-open");
+
+    }
+
+});
+</script>
 
 
 </body>

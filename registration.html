@@ -106,7 +106,65 @@ a{
 
     letter-spacing:.04em;
 }
+.nav-dropdown{
+    position:relative;
+}
 
+
+.nav-dropdown > a{
+    display:flex;
+    align-items:center;
+    gap:5px;
+}
+
+
+.dropdown-arrow{
+    font-size:10px;
+}
+
+
+.dropdown-menu{
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translateX(-50%) translateY(8px);
+
+    min-width:190px;
+
+    background:white;
+
+    padding:10px 0;
+
+    border-radius:7px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.2s ease;
+}
+
+
+.nav-dropdown:hover .dropdown-menu{
+
+    opacity:1;
+    visibility:visible;
+
+    transform:translateX(-50%) translateY(0);
+
+}
+
+
+.dropdown-menu a{
+
+    display:block;
+
+    padding:10px 20px;
+
+    color:var(--navy)!important;
+
+}
 .nav-links{
 
     display:flex;

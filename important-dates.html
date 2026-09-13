@@ -115,23 +115,16 @@ a{
 
     letter-spacing:.04em;
 }
-    .dropdown{
-position:relative;
-}
-
-
-.dropdown{
+  .dropdown{
     position:relative;
 }
 
 
 .dropdown-content{
 
-    display:none;
-
     position:absolute;
 
-    top:35px;
+    top:calc(100% - 2px);
 
     left:0;
 
@@ -139,13 +132,23 @@ position:relative;
 
     min-width:200px;
 
+    padding:10px 0;
+
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
 
     border-radius:8px;
 
     overflow:hidden;
 
-    z-index:100;
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(8px);
+
+    transition:.2s ease;
+
+    z-index:1000;
 }
 
 
@@ -173,7 +176,11 @@ position:relative;
 
 .dropdown:hover .dropdown-content{
 
-    display:block;
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
 
 }
 

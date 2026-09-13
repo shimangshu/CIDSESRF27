@@ -147,7 +147,7 @@ a{
 .dropdown-menu{
 
     position:absolute;
-    top:35px;
+    top:100%;
     left:0;
 
     background:white;
@@ -158,9 +158,12 @@ a{
     box-shadow:0 10px 25px rgba(0,0,0,.15);
 
     display:none;
+
+    z-index:1000;
 }
 
 
+/* Keep dropdown open while mouse is inside Information or dropdown */
 .nav-dropdown:hover .dropdown-menu{
     display:block;
 }
@@ -230,7 +233,7 @@ a{
 
     color:var(--gold);
 
-    font-size:12px;
+    font-size:14px;
 
     font-weight:700;
 

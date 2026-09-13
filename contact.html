@@ -690,7 +690,32 @@ footer li{
 footer a:hover{
     color:var(--gold);
 }
+/* Footer three column layout */
 
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+    padding:40px 20px;
+}
+
+
+.footer-column{
+    text-align:left;
+}
+
+
+.footer-column h3{
+    margin-bottom:15px;
+}
+
+
+.footer-column a{
+    display:block;
+    margin-bottom:8px;
+}
 .copyright{
 
     margin-top:40px;
@@ -727,7 +752,14 @@ footer a:hover{
 
     }
 
+ .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
 
+    .footer-column{
+        text-align:center;
+    }
     .nav-links{
 
         display:none;
@@ -1231,124 +1263,7 @@ footer a:hover{
 
 
 <!-- =====================================================
-     ADDRESS
-===================================================== -->
 
-<section class="address-section">
-
-    <div class="container">
-
-        <div class="address-grid">
-
-
-            <div class="address-content">
-
-                <div class="eyebrow">
-                    Visit Us
-                </div>
-
-                <h2>
-                    H.R.H. The P.O.W.I.E.T.,
-                    Jorhat
-                </h2>
-
-                <p>
-
-                    The conference will be hosted at
-                    H.R.H. The Prince of Wales Institute
-                    of Engineering &amp; Technology,
-                    Jorhat, Assam.
-
-                </p>
-
-                <p>
-
-                    The institute is located at Gar Ali,
-                    in the historic town of Jorhat.
-
-                </p>
-
-            </div>
-
-
-
-            <div class="address-box">
-
-
-                <div class="line">
-
-                    <div class="icon">
-                        ◆
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            Address
-                        </h4>
-
-                        <p>
-                            H.R.H. The P.O.W.I.E.T.<br>
-                            Gar Ali, Jorhat – 785001<br>
-                            Assam, India
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="line">
-
-                    <div class="icon">
-                        ✉
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            Email
-                        </h4>
-
-                        <p>
-                            hrhpowiet@gmail.com
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-                <div class="line">
-
-                    <div class="icon">
-                        ☎
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            Phone
-                        </h4>
-
-                        <p>
-                            7399232471
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
 
 
 

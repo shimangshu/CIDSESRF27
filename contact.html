@@ -129,6 +129,51 @@ a{
 .nav-links a.active{
     color:var(--gold);
 }
+    .nav-links a:hover{
+    color:var(--gold);
+}
+
+.nav-links a.active{
+    color:var(--gold);
+}
+
+
+/* DESKTOP INFORMATION DROPDOWN */
+
+.nav-dropdown{
+    position:relative;
+}
+
+
+.dropdown-menu{
+
+    position:absolute;
+    top:35px;
+    left:0;
+
+    background:white;
+    width:180px;
+
+    padding:12px 0;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    display:none;
+}
+
+
+.nav-dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+
+.dropdown-menu a{
+
+    display:block;
+    padding:10px 18px;
+    color:#10243e;
+
+}
 
 .nav-register{
 
@@ -661,7 +706,14 @@ footer a:hover{
 
     font-size:11px;
 }
-
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
 
 /* =====================================================
    MOBILE

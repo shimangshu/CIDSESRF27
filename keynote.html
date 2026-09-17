@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Keynote Speaker | CIDSESRF-2027</title>
+<title>Keynote Speakers | CIDSESRF-2027</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -373,287 +373,127 @@ a{
 
 
 /* =====================================================
-   KEYNOTE PROFILE
+   PLENARY SPEAKERS
 ===================================================== */
 
-.keynote-section{
+.plenary-section{
 
     padding:20px 0 100px;
 }
 
-.keynote-card{
+.plenary-grid{
 
     display:grid;
 
-    grid-template-columns:390px 1fr;
+    grid-template-columns:repeat(2, 1fr);
 
-    gap:55px;
+    gap:45px;
 
-    align-items:start;
-
-    max-width:1050px;
+    max-width:1100px;
 
     margin:auto;
 }
 
+.speaker-card{
 
-/* Speaker image */
+    background:white;
 
-.speaker-image{
+    border:1px solid var(--border);
 
-    position:relative;
+    display:grid;
 
-    background:var(--cream);
-
-    min-height:470px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
+    grid-template-columns:190px 1fr;
 
     overflow:hidden;
 }
 
-.speaker-image img{
+.speaker-photo{
+
+    background:var(--cream);
+
+    min-height:100%;
+
+    overflow:hidden;
+}
+
+.speaker-photo img{
 
     width:100%;
 
     height:100%;
 
-    min-height:470px;
+    min-height:230px;
 
     object-fit:cover;
 
     display:block;
 }
 
-.image-placeholder{
+.speaker-card-info{
 
-    text-align:center;
-
-    padding:40px;
-
-    color:var(--muted);
+    padding:26px 24px;
 }
 
-.image-placeholder .initial{
-
-    width:110px;
-
-    height:110px;
-
-    margin:0 auto 20px;
-
-    border:1px solid var(--gold);
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    font-family:"Playfair Display",serif;
-
-    font-size:42px;
-
-    color:var(--gold);
-}
-
-.image-placeholder p{
-
-    font-size:12px;
-}
-
-
-/* Speaker information */
-
-.speaker-info{
-
-    padding-top:15px;
-}
-
-.speaker-info .label{
-
-    color:var(--gold);
-
-    font-size:11px;
-
-    text-transform:uppercase;
-
-    letter-spacing:.17em;
-
-    font-weight:700;
-
-    margin-bottom:12px;
-}
-
-.speaker-info h2{
-
-    font-family:"Playfair Display",serif;
-
-    color:var(--navy);
-
-    font-size:43px;
-
-    line-height:1.12;
-
-    margin-bottom:12px;
-}
-
-.designation{
-
-    color:var(--muted);
-
-    font-size:15px;
-
-    line-height:1.6;
-
-    margin-bottom:28px;
-}
-
-.rule{
-
-    width:55px;
-
-    height:2px;
-
-    background:var(--gold);
-
-    margin-bottom:27px;
-}
-
-.speaker-info h3{
-
-    font-family:"Playfair Display",serif;
-
-    color:var(--navy);
-
-    font-size:25px;
-
-    margin-bottom:13px;
-}
-
-.speaker-info p{
-
-    color:var(--muted);
-
-    font-size:14px;
-
-    margin-bottom:17px;
-}
-
-
-/* =====================================================
-   LECTURE BOX
-===================================================== */
-
-.lecture-box{
-
-    background:var(--navy);
-
-    padding:30px;
-
-    margin-top:28px;
-}
-
-.lecture-box .small{
+.speaker-card-info .label{
 
     color:var(--gold);
 
     font-size:10px;
 
-    font-weight:700;
-
     text-transform:uppercase;
 
-    letter-spacing:.15em;
+    letter-spacing:.16em;
 
-    margin-bottom:9px;
-}
-
-.lecture-box h3{
-
-    color:white;
-
-    font-family:"Playfair Display",serif;
-
-    font-size:25px;
+    font-weight:700;
 
     margin-bottom:10px;
 }
 
-.lecture-box p{
-
-    color:rgba(255,255,255,.64);
-
-    margin:0;
-
-    font-size:13px;
-}
-
-
-/* =====================================================
-   BIOGRAPHY
-===================================================== */
-
-.bio-section{
-
-    background:var(--cream);
-
-    padding:80px 0;
-}
-
-.bio-grid{
-
-    display:grid;
-
-    grid-template-columns:.75fr 1.5fr;
-
-    gap:65px;
-
-    align-items:start;
-}
-
-.bio-title .eyebrow{
-    margin-bottom:10px;
-}
-
-.bio-title h2{
+.speaker-card-info h3{
 
     font-family:"Playfair Display",serif;
 
     color:var(--navy);
 
-    font-size:37px;
+    font-size:22px;
 
-    line-height:1.15;
+    line-height:1.25;
+
+    margin-bottom:9px;
 }
 
-.bio-text p{
+.speaker-card-info .designation{
 
     color:var(--muted);
 
-    font-size:14px;
+    font-size:13px;
 
-    margin-bottom:17px;
+    line-height:1.55;
+}
+
+.speaker-card-info .rule{
+
+    width:38px;
+
+    height:2px;
+
+    background:var(--gold);
+
+    margin:14px 0;
 }
 
 
 /* =====================================================
-   COMING SOON
+   NOTE / COMING SOON
 ===================================================== */
 
-.coming-soon{
+.plenary-note{
 
     max-width:900px;
 
-    margin:20px auto 0;
+    margin:45px auto 0;
 
-    padding:30px;
+    padding:26px 30px;
 
     background:#faf8f2;
 
@@ -666,7 +506,7 @@ a{
     text-align:center;
 }
 
-.coming-soon strong{
+.plenary-note strong{
     color:var(--navy);
 }
 
@@ -906,18 +746,22 @@ a{
     transform:rotate(180deg);
 
 }
-    .about-grid {
+
+    .plenary-grid{
 
         grid-template-columns:1fr;
-
-        gap:45px;
 
     }
 
-
-    .purpose-grid {
+    .speaker-card{
 
         grid-template-columns:1fr;
+
+    }
+
+    .speaker-photo img{
+
+        min-height:280px;
 
     }
 
@@ -1082,7 +926,7 @@ a{
     </a>
 
 
-    <a href="keynote.html">
+    <a href="keynote.html" class="active">
         Keynote
     </a>
 
@@ -1123,7 +967,7 @@ a{
             </div>
 
             <h1>
-                Keynote Speaker
+                Plenary Speakers
             </h1>
 
             <p>
@@ -1151,18 +995,18 @@ a{
     <div class="container">
 
         <div class="eyebrow">
-            Distinguished Lecture
+            Distinguished Lectures
         </div>
 
         <h2>
-            A keynote for the centenary year.
+            Four plenary talks for the centenary year.
         </h2>
 
         <p>
 
-            CIDSESRF-2027 will feature a distinguished keynote
-            lecture as part of the centenary celebrations of
-            H.R.H. The P.O.W.I.E.T., Jorhat.
+            CIDSESRF-2027 will feature four distinguished
+            plenary lectures as part of the centenary
+            celebrations of H.R.H. The P.O.W.I.E.T., Jorhat.
 
         </p>
 
@@ -1173,101 +1017,138 @@ a{
 
 
 <!-- =====================================================
-     KEYNOTE PROFILE
+     PLENARY SPEAKERS
 ===================================================== -->
 
-<section class="keynote-section">
+<section class="plenary-section">
 
     <div class="container">
 
-        <div class="keynote-card">
+        <div class="plenary-grid">
 
 
-            <!-- SPEAKER PHOTO -->
+            <!-- SPEAKER 1 -->
 
-            <div class="speaker-image">
+            <div class="speaker-card">
 
-                <!--
-                WHEN SPEAKER IS CONFIRMED:
+                <div class="speaker-photo">
+                    <img src="keynote1.jpg" alt="Dr. Binoy Kumar Saikia">
+                </div>
 
-                Replace this entire placeholder with:
+                <div class="speaker-card-info">
 
-                <img
-                    src="keynote-speaker.jpg"
-                    alt="Name of Keynote Speaker"
-                >
-
-                -->
-
-                <div class="image-placeholder">
-
-                    <div class="initial">
-                        KS
+                    <div class="label">
+                        Plenary Speaker
                     </div>
 
-                    <p>
-                        Keynote speaker<br>
-                        to be announced
-                    </p>
+                    <h3>
+                        Dr. Binoy Kumar Saikia
+                    </h3>
+
+                    <div class="rule"></div>
+
+                    <div class="designation">
+
+                        Shanti Swarup Bhatnagar Prize Awardee<br>
+                        CSIR–North East Institute of Science
+                        and Technology (CSIR-NEIST)
+
+                    </div>
 
                 </div>
 
             </div>
 
 
+            <!-- SPEAKER 2 -->
 
-            <!-- SPEAKER INFORMATION -->
+            <div class="speaker-card">
 
-            <div class="speaker-info">
-
-                <div class="label">
-                    Keynote Speaker
+                <div class="speaker-photo">
+                    <img src="keynote2.jpg" alt="Prof. Swaroop Nandan Bora">
                 </div>
 
-                <h2>
-                    To Be Announced
-                </h2>
+                <div class="speaker-card-info">
 
-                <div class="designation">
-
-                    Distinguished Scientist / Professor<br>
-                    Affiliation to be announced
-
-                </div>
-
-                <div class="rule"></div>
-
-
-                <h3>
-                    Keynote Lecture
-                </h3>
-
-                <p>
-
-                    The title and abstract of the keynote
-                    lecture will be announced once the
-                    speaker and lecture theme are confirmed.
-
-                </p>
-
-
-                <div class="lecture-box">
-
-                    <div class="small">
-                        Distinguished Lecture
+                    <div class="label">
+                        Plenary Speaker
                     </div>
 
                     <h3>
-                        Lecture details coming soon
+                        Prof. Swaroop Nandan Bora
                     </h3>
 
-                    <p>
+                    <div class="rule"></div>
 
-                        Further information regarding the
-                        keynote lecture will be published
-                        on this page.
+                    <div class="designation">
 
-                    </p>
+                        Indian Institute of Technology (IIT)
+                        Guwahati
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SPEAKER 3 -->
+
+            <div class="speaker-card">
+
+                <div class="speaker-photo">
+                    <img src="keynote3.jpg" alt="Dr. Dhrumajyoti Bhattacharya">
+                </div>
+
+                <div class="speaker-card-info">
+
+                    <div class="label">
+                        Plenary Speaker
+                    </div>
+
+                    <h3>
+                        Dr. Dhrumajyoti Bhattacharya
+                    </h3>
+
+                    <div class="rule"></div>
+
+                    <div class="designation">
+
+                        Tezpur University
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SPEAKER 4 -->
+
+            <div class="speaker-card">
+
+                <div class="speaker-photo">
+                    <img src="keynote4.jpg" alt="Dr. Jayanta Deka">
+                </div>
+
+                <div class="speaker-card-info">
+
+                    <div class="label">
+                        Plenary Speaker
+                    </div>
+
+                    <h3>
+                        Dr. Jayanta Deka
+                    </h3>
+
+                    <div class="rule"></div>
+
+                    <div class="designation">
+
+                        Chancellor, Girijananda Chowdhury
+                        University
+
+                    </div>
 
                 </div>
 
@@ -1276,70 +1157,14 @@ a{
 
         </div>
 
-    </div>
 
-</section>
+        <div class="plenary-note">
 
-
-
-<!-- =====================================================
-     BIOGRAPHY
-===================================================== -->
-
-<section class="bio-section">
-
-    <div class="container">
-
-        <div class="bio-grid">
-
-
-            <div class="bio-title">
-
-                <div class="eyebrow">
-                    Speaker Profile
-                </div>
-
-                <h2>
-                    Distinguished<br>
-                    expertise.
-                </h2>
-
-            </div>
-
-
-            <div class="bio-text">
-
-                <p>
-
-                    The keynote speaker's professional profile,
-                    academic background, research interests,
-                    major contributions and achievements will
-                    be presented here after confirmation.
-
-                </p>
-
-                <p>
-
-                    This section can include information on
-                    academic positions, research leadership,
-                    awards, fellowships, publications,
-                    patents and other significant contributions.
-
-                </p>
-
-                <div class="coming-soon">
-
-                    <strong>
-                        Speaker profile will be updated soon.
-                    </strong>
-
-                    Please check this page for the official
-                    announcement.
-
-                </div>
-
-            </div>
-
+            <strong>
+                Lecture titles, abstracts and detailed
+                biographies will be updated soon.
+            </strong>
+            Please check this page for further announcements.
 
         </div>
 
@@ -1358,7 +1183,7 @@ a{
     <div class="container">
 
         <h2>
-            One lecture. A wider perspective.
+            Four lectures. A wider perspective.
         </h2>
 
         <p>

@@ -421,7 +421,92 @@ a{
     background:var(--cream);
 }
 
+/* =====================================================
+   PAYMENT DETAILS
+===================================================== */
 
+.payment-section{
+    margin-top:45px;
+    padding:32px;
+    background:#faf8f2;
+    border-top:3px solid var(--gold);
+}
+
+.payment-grid{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.qr-box{
+    text-align:center;
+}
+
+.qr-box img{
+    width:230px;
+    height:230px;
+    object-fit:contain;
+    background:white;
+    padding:12px;
+    border:1px solid var(--border);
+}
+
+.qr-box p{
+    margin-top:12px;
+    color:var(--muted);
+    font-size:13px;
+}
+
+.bank-details h3{
+    font-family:"Playfair Display",serif;
+    color:var(--navy);
+    font-size:25px;
+    margin-bottom:18px;
+}
+
+.bank-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.bank-table td{
+    padding:9px 0;
+    border-bottom:1px solid var(--border);
+    font-size:13px;
+    color:var(--muted);
+}
+
+.bank-table td:first-child{
+    width:42%;
+    color:var(--navy);
+    font-weight:600;
+}
+
+.payment-note{
+    margin-top:20px;
+    padding:15px 18px;
+    background:white;
+    border-left:3px solid var(--gold);
+    color:var(--muted);
+    font-size:12.5px;
+}
+
+@media (max-width: 900px){
+    .payment-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .qr-box img{
+        width:210px;
+        height:210px;
+    }
+
+    .bank-table td:first-child{
+        width:45%;
+    }
+}
 /* =====================================================
    CONTENT
 ===================================================== */
@@ -1239,6 +1324,82 @@ Celebrating 100 Years of H.R.H. The P.O.W.I.E.T. · 1927–2027
     availability and prior confirmation by the organisers.
 
 </div>
+<!-- =============================================
+                     PAYMENT DETAILS
+                ============================================== -->
+
+                <div class="payment-section">
+
+                    <h2 class="section-title">
+                        Payment Details
+                    </h2>
+
+                    <div class="payment-grid">
+
+                        <div class="qr-box">
+
+                            <img
+                                src="document/QR.png"
+                                alt="CIDSESRF-2027 Payment QR Code"
+                            >
+
+                            <p>
+                                Scan the QR code to make the
+                                registration payment.
+                            </p>
+
+                        </div>
+
+
+                        <div class="bank-details">
+
+                            <h3>
+                                Bank Details
+                            </h3>
+
+                            <table class="bank-table">
+
+                                <tr>
+                                    <td>Account Name</td>
+                                    <td>HRH THE PRINCE OF WALES INSTITUTE OF ENGINEERING AND TECHNOLOGY JORHAT</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bank Name</td>
+                                    <td>Punjab National Bank</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Account Number</td>
+                                    <td>0241000100227595</td>
+                                </tr>
+
+                                <tr>
+                                    <td>IFSC Code</td>
+                                    <td>PUNB0024100</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Branch</td>
+                                    <td>Gar-ali, Jorhat</td>
+                                </tr>
+
+                                
+
+                            </table>
+
+                            <div class="payment-note">
+                                <strong>Please Note:</strong>
+                                After making the payment, participants
+                                should retain the payment receipt or
+                                transaction ID .
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
 
               
 

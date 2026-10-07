@@ -570,7 +570,30 @@
             margin-bottom: 9px;
         }
 
+/* =====================================================
+   CONFERENCE BROCHURE
+   ===================================================== */
 
+.brochure-card {
+    border-top: 3px solid var(--gold);
+}
+
+.brochure-link {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 18px;
+    background: var(--navy);
+    color: white !important;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.25s ease;
+}
+
+.brochure-link:hover {
+    background: var(--gold);
+    color: var(--navy) !important;
+}
 
         /* =====================================================
            CONFERENCE PURPOSE
@@ -1288,6 +1311,25 @@
                     </li>
 
                 </ul>
+
+            </div>
+               <!-- BROCHURE -->
+
+            <div class="side-card brochure-card">
+
+                <h3>
+                    Conference Brochure
+                </h3>
+
+                <p>
+                    Download the official CIDSESRF-2027 conference brochure.
+                </p>
+
+                <a href="document/brochure.pdf"
+                   download
+                   class="brochure-link">
+                    Download Brochure →
+                </a>
 
             </div>
 
